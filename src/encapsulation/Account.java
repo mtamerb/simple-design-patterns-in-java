@@ -6,12 +6,12 @@ public class Account {
     // encapsulation
     public void deposit(float amount) {
         if (amount > 0)
-            balance += amount;
+            this.balance += amount;
     }
 
     public void withdraw(float amount) {
         if (amount > 0 && this.balance - amount >= 0) {
-            balance -= amount;
+            this.balance -= amount;
             System.out.println("Withdrawn: " + amount);
         } else {
             System.out.println("Insufficient balance.");
@@ -19,7 +19,7 @@ public class Account {
     }
 
     public float getBalance() {
-        return balance;
+        return this.balance;
     }
 
     public void setBalance(float newBalance) {
