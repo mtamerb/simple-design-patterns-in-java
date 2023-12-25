@@ -1,4 +1,4 @@
-package classes;
+package coupling;
 
 public class Main {
 
